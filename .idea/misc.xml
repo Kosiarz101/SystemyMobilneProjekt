@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_baseline_book_24.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.28229166666666666" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_baseline_review_24.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_menu_camera.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/drawable/side_nav_bar.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_book_details.xml" value="0.25" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_main.xml" value="0.14402173913043478" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_player.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_review_edit.xml" value="0.3007246376811594" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_saved_reviews.xml" value="0.25" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_saved_videos.xml" value="0.2546875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/activity_video_edit.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/app_bar_saved_reviews.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/book_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/content_saved_reviews.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_best_reviews.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_dashboard.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_gallery.xml" value="0.2640625" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_home.xml" value="0.2640625" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_newest_reviews.xml" value="0.25" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_notifications.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_saved_reviews.xml" value="0.1" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_slideshow.xml" value="0.2640625" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/fragment_title_reviews.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/nav_header_saved_reviews.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/layout/video_list_item.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/activity_main_drawer.xml" value="0.203125" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/activity_saved_reviews_drawer.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/book_menu.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/only_more_options_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/saved_reviews.xml" value="0.203125" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Project/app/src/main/res/menu/tabs_menu.xml" value="0.2921875" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Task9/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Task9/app/src/main/res/layout/book_list_item.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Task9/app/src/main/res/layout/book_menu.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Kosiarz/Documents/Projekty/AndroidStudio/Task9/app/src/main/res/menu/book_menu.xml" value="0.20572916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

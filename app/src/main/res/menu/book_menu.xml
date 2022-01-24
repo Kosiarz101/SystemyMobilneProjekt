@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_item_search"
+          android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always">
+    </item>
+    <item android:id="@+id/menu_more_options"
+        android:title="moreOptions"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/savedReviewOptionBookMenu"
+                android:icon="@drawable/ic_baseline_review_24"
+                android:title="Saved Reviews"
+                app:showAsAction="always"/>
+            <item android:id="@+id/searchBookOptionBookMenu"
+                android:icon="@drawable/ic_baseline_search_24"
+                android:title="Search Book"
+                app:showAsAction="always"/>
+            <item android:id="@+id/videosOptionBookMenu"
+                android:icon="@drawable/ic_baseline_ondemand_video_24"
+                android:title="Videos"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
+</menu>

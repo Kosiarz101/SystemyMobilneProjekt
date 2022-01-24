@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="65dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Book Cover"/>
+        <TextView
+            android:id="@+id/bookVideoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_toEndOf="@+id/img_cover"
+            android:layout_alignTop="@+id/img_cover"/>
+        <TextView
+            android:id="@+id/videoTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_toEndOf="@+id/img_cover"
+            android:layout_alignTop="@+id/bookVideoTextView"/>
+        <TextView
+            android:id="@+id/authorVideoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_toEndOf="@+id/img_cover"
+            android:layout_alignTop="@+id/videoTitleTextView"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
