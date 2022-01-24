@@ -20,6 +20,7 @@ import com.example.task9.Database.BookRepository;
 import com.example.task9.Database.ReviewRepository;
 import com.example.task9.Models.DatabaseModels.BookDatabaseModel;
 import com.example.task9.Models.DatabaseModels.Review;
+import com.example.task9.Models.OperationManager;
 import com.example.task9.Models.RecycleViewAdapterReviews;
 import com.example.task9.R;
 
@@ -72,7 +73,7 @@ public class TitleReviewsFragment extends Fragment implements RecycleViewAdapter
     @Override
     public void onNoteClick(int position) {
         Intent intent = new Intent(getActivity().getApplicationContext(), BookDetailsActivity.class);
-        intent.putExtra("bookId", bookList.get(position));
+        intent.putExtra("bookId", OperationManager.CastBookDatabaseModelToBookSearch(bookList.get(0)));
         startActivity(intent);
     }
 

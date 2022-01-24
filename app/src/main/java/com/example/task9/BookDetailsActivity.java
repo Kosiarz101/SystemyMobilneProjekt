@@ -275,8 +275,6 @@ public class BookDetailsActivity extends AppCompatActivity implements SensorEven
     @Override
     protected void onResume() {
         super.onResume();
-        accelerationPreviousValueX = 0;
-        accelerationCurrentValueX = 0;
         sensorManager.registerListener(BookDetailsActivity.this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         review = new ReviewRepository(getApplication()).findReviewByBookId(bookSearch.getIdWork());
         if(review != null)
@@ -296,16 +294,12 @@ public class BookDetailsActivity extends AppCompatActivity implements SensorEven
         double changeValue = Math.abs(accelerationCurrentValueX - accelerationPreviousValueX);
         if(changeValue > 15)
         {
-            authorNameTextView.setText(String.valueOf(changeValue) );
             Intent intent = new Intent(BookDetailsActivity.this, ReviewEditActivity.class);
             intent.putExtra("review", review);
             intent.putExtra("bookId", bookSearch);
             startActivity(intent);
         }
         accelerationPreviousValueX = accelerationCurrentValueX;
-        titleTextView.setText(String.valueOf(changeValue));
-        publisherNameTextView.setText(String.valueOf(accelerationCurrentValueX));
-        releaseYearTextView.setText(String.valueOf(accelerationPreviousValueX));
     }
 
     @Override

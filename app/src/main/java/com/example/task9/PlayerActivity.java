@@ -30,6 +30,7 @@ import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
 import com.google.android.exoplayer2.util.Util;
 
+import at.huber.youtubeExtractor.Format;
 import at.huber.youtubeExtractor.VideoMeta;
 import at.huber.youtubeExtractor.YouTubeExtractor;
 import at.huber.youtubeExtractor.YtFile;
@@ -126,11 +127,18 @@ public class PlayerActivity extends AppCompatActivity implements SensorEventList
             protected void onExtractionComplete(@Nullable SparseArray<YtFile> ytFiles, @Nullable VideoMeta videoMeta) {
                 if(ytFiles != null)
                 {
+                    YtFile ytFile = null;
                     if(ytFiles.get(22) != null)
                     {
                         int videoTag = 22;
                         MediaSource videoSource = new ProgressiveMediaSource.Factory(new DefaultHttpDataSource.Factory())
                                 .createMediaSource(MediaItem.fromUri(ytFiles.get(videoTag).getUrl()));
+                        player.setMediaSource(new MergingMediaSource(true, videoSource), true);
+                    }
+                    else if((ytFile = GetVideoAndAudioFormat(ytFiles)) != null)
+                    {
+                        MediaSource videoSource = new ProgressiveMediaSource.Factory(new DefaultHttpDataSource.Factory())
+                                .createMediaSource(MediaItem.fromUri(ytFiles.get(ytFile.getFormat().getItag()).getUrl()));
                         player.setMediaSource(new MergingMediaSource(true, videoSource), true);
                     }
                     else
@@ -164,6 +172,17 @@ public class PlayerActivity extends AppCompatActivity implements SensorEventList
                 new ReviewRepository(getApplication()).update(review);
             }
         }.extract(url);
+    }
+    private YtFile GetVideoAndAudioFormat(@Nullable SparseArray<YtFile> ytFiles)
+    {
+        for(int i=0; i<ytFiles.size(); i++)
+        {
+            YtFile ytFile = ytFiles.get(ytFiles.keyAt(i));
+            Format format = ytFile.getFormat();
+            if(format.getAudioBitrate() > 0)
+                return ytFile;
+        }
+        return null;
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

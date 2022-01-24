@@ -67,7 +67,7 @@ public class VideoEditActivity extends AppCompatActivity {
         if(book == null)
         {
             book = new BookDatabaseModel(
-                    bookSearch.getTitle(), bookSearch.getIdWork(), bookSearch.getAuthorKeys().get(0), bookSearch.getAuthors().get(0)
+                    bookSearch.getTitle(), bookSearch.getIdWork(), bookSearch.getAuthorKeys().get(0), bookSearch.getAuthors().get(0), bookSearch.getEditions().get(0)
             );
             bookRepository.insert(book);
         }

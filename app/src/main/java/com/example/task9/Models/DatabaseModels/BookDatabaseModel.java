@@ -14,12 +14,14 @@ public class BookDatabaseModel implements Parcelable {
     private String workId;
     private String authorId;
     private String authorName;
+    private String editionId;
 
-    public BookDatabaseModel(String title, String workId, String authorId, String authorName) {
+    public BookDatabaseModel(String title, String workId, String authorId, String authorName, String editionId) {
         this.title = title;
         this.workId = workId;
         this.authorId = authorId;
         this.authorName = authorName;
+        this.editionId = editionId;
     }
     public BookDatabaseModel() {
 
@@ -31,6 +33,7 @@ public class BookDatabaseModel implements Parcelable {
         workId = in.readString();
         authorId = in.readString();
         authorName = in.readString();
+        editionId = in.readString();
     }
 
     public static final Creator<BookDatabaseModel> CREATOR = new Creator<BookDatabaseModel>() {
@@ -85,6 +88,14 @@ public class BookDatabaseModel implements Parcelable {
         this.authorName = authorName;
     }
 
+    public String getEditionId() {
+        return editionId;
+    }
+
+    public void setEditionId(String editionId) {
+        this.editionId = editionId;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -97,5 +108,6 @@ public class BookDatabaseModel implements Parcelable {
         dest.writeString(workId);
         dest.writeString(authorId);
         dest.writeString(authorName);
+        dest.writeString(editionId);
     }
 }

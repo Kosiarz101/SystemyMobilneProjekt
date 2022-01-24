@@ -8,6 +8,7 @@ import com.example.task9.Database.ReviewRepository;
 import com.example.task9.Fragments.BestReviewsFragment;
 import com.example.task9.Fragments.NewestReviewsFragment;
 import com.example.task9.Fragments.TitleReviewsFragment;
+import com.example.task9.Models.BookSearch;
 import com.example.task9.Models.DatabaseModels.BookDatabaseModel;
 import com.example.task9.Models.RecycleViewAdapter;
 import com.example.task9.Models.RecycleViewAdapterReviews;
@@ -32,6 +33,7 @@ import android.widget.SearchView;
 import com.example.task9.ui.main.SectionsPagerAdapter;
 import com.example.task9.databinding.ActivitySavedReviewsBinding;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class SavedReviewsActivity extends AppCompatActivity implements RecycleViewAdapterReviews.onNoteListener {
@@ -84,8 +86,9 @@ public class SavedReviewsActivity extends AppCompatActivity implements RecycleVi
     }
     @Override
     public void onNoteClick(int position) {
-        Intent intent = new Intent(this, BookDetailsActivity.class);
-        intent.putExtra("bookId", bookList.get(position));
+        Intent intent = new Intent(SavedReviewsActivity.this, BookDetailsActivity.class);
+
+        intent.putExtra("bookId", bookList.get(0));
         startActivity(intent);
     }
 
